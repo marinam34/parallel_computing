@@ -39,7 +39,7 @@ $(BUILD_DIR)/solver_cuda.o: $(SRC_DIR)/solver_cuda.cu | $(BUILD_DIR)
 	$(NVCC) $(NVCCFLAGS) -c $< -o $@
 
 $(BUILD_DIR)/task_cuda: $(OBJS)
-	$(CXX) $(CXXFLAGS) $^ -o $@ -L/usr/local/cuda/lib64 -lcudart -lstdc++
+	$(CXX) $(CXXFLAGS) $^ -o $@ -L/usr/local/cuda/lib64 -lcudart -lstdc++ -lm
 
 
 clean:

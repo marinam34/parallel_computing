@@ -1,5 +1,5 @@
 ARCH      ?= sm_60
-HOST_COMP ?= mpicxx 
+HOST_COMP ?= mpicc 
 
 NVCC      := nvcc
 CXX       := $(HOST_COMP)
